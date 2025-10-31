@@ -1,4 +1,4 @@
-from sqlalchemy.org import Session
+from sqlalchemy.orm import Session
 from typing import Dict
 from ..repositories.product_repository import ProductRepository
 from ..schemas.cart import CartResponse, CartItem, CartItemCreate, CartItemUpdate

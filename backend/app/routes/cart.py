@@ -21,7 +21,7 @@ class UpdateCartRequest(BaseModel):
     cart: Dict[int, int] = {}
 
 class RemoveCartRequest(BaseModel):
-    cart = Dict[int, int] = {}
+    cart: Dict[int, int] = {}
 
 @router.post("/add", status_code=status.HTTP_200_OK)
 def add_to_cart(request: AddToCartRequest, db: Session = Depends(get_db)):
